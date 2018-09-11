@@ -14,7 +14,7 @@
                 height:100px;
                 padding: 5px;
                 background-color:#414046; 
-                border-bottom: 3px solid #76FF03;
+                /* border-bottom: 3px solid #76FF03; */
             }
             .cabecalho h1{
                 color: #76FF03;
@@ -53,7 +53,6 @@
             article svg{
                 display:block;
                 margin: auto;
-                background-color: green;
             }
             article video{
                 display: block;
@@ -63,6 +62,18 @@
                 width: 800px;
                 display: block;
                 margin: auto;
+            }
+            .nav-bar{
+                background-color: #5e5c68;
+                height: 30px;
+                padding: 5px;
+            }
+            .nav-bar a{
+                display: inline-block;
+                padding: 5px;
+                color: #76FF03;
+                text-decoration: none;
+                
             }
 
         </style>
@@ -75,13 +86,13 @@
             Relatorio do Olheiro
             </h1>
         </header>
-        <div>
-            <nav>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </nav>
-        </div>
+        <nav class="nav-bar">
+            <a href="https://globoesporte.globo.com/futebol/times/palmeiras/noticia/dono-da-melhor-campanha-palmeiras-reinicia-busca-por-titulo-da-libertadores-com-novo-perfil-de-comando.ghtml" target="_blank">
+            Palmeiras
+            </a>
+            <a href="http://www.conmebol.com/pt-br" target="_blank">CONMEBOL</a>
+            <a href="https://www.uefa.com/" target="_blank">UEFA</a>
+        </nav>
         <article class="conmebol">
             <header>
                 <h2>Palmeiras se destaca com a melhor campanha da primeira fase da Libertadores.</h2>
