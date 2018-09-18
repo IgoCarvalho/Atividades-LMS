@@ -1,0 +1,197 @@
+    <!DOCTYPE html>
+    <html>
+        <head lang="pt-br">
+            <meta charset="utf-8">
+            <title>Atividade 04</title>
+            <style>
+                *{
+                    padding: 0px;
+                    margin: 0px;
+                    font-family: "arial", sans-serif;
+                }
+                .cabecalho{
+                    height: 10vh;
+                    width:100%;
+                    background-color: white;
+                }
+                .cabecalho h1{
+
+                    padding: 10px 15px
+                }
+                .menu{
+                    width: 100%;
+                    overflow: hidden;
+                    background-color: #4CAF50;                    
+                    
+                }
+                .menu ul{
+                    list-style: none;
+                }
+                .menu .menu-item{
+                    float: left;
+                    width: 10%
+                }
+                .menu .menu-label{
+                    text-align: center;
+                    padding: 10px;
+                    color: white;
+                    cursor: pointer;
+
+                }
+                .menu .menu-content{
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    background-color: rgb(225,225,225);
+                    display: none;
+                    z-index: 5;
+                    
+                }
+                .menu .menu-content ul{
+                    width: 15%;
+                    float: left;
+                }
+                .menu .menu-content .titulo{
+                    padding: 10px;
+                    display: block;
+                    font-weight: bold;
+                    color: black;
+                }
+                .menu .menu-content a{
+                    padding: 10px;
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                }
+                .menu-label:hover{
+                    background-color:white;
+                    color: black;
+                }
+                .menu-content a:hover{
+                    background-color:rgb(200, 200, 200);
+                    color: black;
+                }
+                .menu-item:hover .menu-content{
+                    display: block;
+                }
+                .nav-image{
+                    padding:0px 10px;
+                    position: relative; 
+                    float: right;
+                    height: 38px;
+                    cursor: pointer;
+                }
+                .left-menu{
+                    width: 20%;
+                    height: 100vh;
+                    /* padding: 15px; */
+                    float: left;
+                    background-color:white;
+                    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
+                    z-index: -1;
+                    
+                }
+                .left-menu ul{
+                    list-style: none;
+                    /* width: 100%; */
+                }
+                .left-menu .titulo{
+                    margin-top: 15px;
+                    padding: 10px 15px;
+                    font-weight: bold;
+                    
+                }
+                .left-menu li a{
+                    display: block;
+                    padding: 5px 15px;
+                    text-decoration: none;
+                    color: black;
+                }
+                .left-menu li a:hover{
+                    background-color: rgb(225,225,225);
+                }
+                .main{
+                    width: 80%;
+                    height: 100vh;
+                    margin-left: 20%;
+                    background-color: white;
+
+                }
+                </style>
+        </head>
+        <body>
+            <header class="cabecalho">
+                <h1>Site</h1>
+
+            </header>
+            <nav class="menu">
+                <ul >
+                    <li >
+                        <div class="menu-item">
+                            <div class="menu-label">TUTORIAIS</div>
+                            <div class="menu-content">
+                                <ul >
+                                    <li class="titulo">HTML/CSS</li>
+                                    <li><a href="">Alguma coisa</a></li>
+                                    <li><a href="">Outra coisa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="menu-item">
+                            <div class="menu-label">REFERENCIAS</div>
+                            <div class="menu-content">
+                                <ul >
+                                    <li class="titulo">HTML</li>
+                                    <li><a href="">Alguma referencia</a></li>
+                                    <li><a href="">Outra referencia</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="menu-item">
+                            <div class="menu-label">EXEMPLOS</div>
+                            <div class="menu-content">
+                                <ul >
+                                    <li class="titulo">CSS</li>
+                                    <li><a href="">Algum exemplo</a></li>
+                                    <li><a href="">Outro exemplo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nav-image">
+                    <img src="./Image/globe.png" height="100%" alt="globe">
+                    <img src="./Image/search.png" height="100%"  alt="search">
+                </div>
+                
+            </nav>
+
+            <div class="left-menu">
+                <ul>
+                    <!-- <h1>HTML/CSS</h1> -->
+                    <li class="titulo">HTML/CSS</li>
+                    <li><a href="">Alguma coisa aqui</a></li>
+                    <li><a href="">Aqui tambem</a></li>
+                    <li><a href="">E aqui tambem</a></li>
+                    <li><a href="">Bootstrap</a></li>
+                </ul>
+                <ul>
+                    <!-- <h1>HTML/CSS</h1> -->
+                    <li class="titulo">JavaScript</li>
+                    <li><a href="">Alguma coisa aqui</a></li>
+                    <li><a href="">Aqui tambem</a></li>
+                    <li><a href="">E aqui tambem</a></li>
+                    <li><a href="">jQuery</a></li>
+                </ul>
+            </div>
+            <div class="main">
+
+            </div>
+            
+
+        </body>
+    </html>
