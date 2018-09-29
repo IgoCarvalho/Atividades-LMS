@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+/*CABECALHO*/
+.cabecalho{
+    box-sizing: border-box;
+    /* height: 15vh; */
+    width: 100%;
+    overflow: hidden;
+    padding: 2.5vh 5px;
+    background-color:#252525; 
+    position: relative;
+}
+
+.cabecalho img{
+    float: left;
+    height: 10vh;
+}
+.cabecalho h1{
+    top: 50%;
+    transform: translate( 85px, -50%);
+    position: absolute;
+    color: #fff;
+    font-size: 40px
+}
+
+/* NAV-BAR */
+
+
+
+.nav-bar{
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    background-color: tomato;
+    padding: 0 auto;
+    border-bottom: 2px solid #fff;
+    position: relative;
+
+}
+.nav-bar ul{
+    list-style:none;
+}
+.nav-bar a{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    /* background-color: #3a3a3a; */
+    color: #ffffff;
+    transition: all 300ms;
+
+}
+/* .nav-bar .botao .botao-item> a{
+    background-color: #f1f1f1
+} */
+.nav-bar .botao .botao-item a:hover{
+    /* color: #e9a2bd; */
+    /* background-color: #4d4d4d; */
+    background-color:rgba(0,0,0,.2);
+}
+/* .nav-bar .botao:hover > a{
+    background-color: #f1f1f1
+}
+.nav-bar .botao .botao-item> a:hover{
+    background-color: #fafafa
+} */
+.nav-bar .botao{
+    position: relative;
+    width: 10%;
+    float: left;
+}
+.nav-bar .botao .botao-conteudo{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    max-height: 0;
+    transition: max-height 400ms;
+}
+.nav-bar .botao .botao-conteudo .botao-item a{
+    color: #252525;
+    border-bottom: 2px solid tomato;
+}
+.nav-bar .botao:hover .botao-conteudo{
+    max-height: 250px;    
+}
+.nav-bar .botao:hover > a{
+    background-color: #fff;
+    color: #252525;
+}
+/* nav-bar ESQUERDA */
+.menu-e{
+    float: left;
+    height: calc(85vh - 40px);
+    width: 15%;
+    overflow: hidden;
+    background-color: #3a3a3a;
+}
+.menu-e header h2{
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #252525;
+    font-size: 1.2em;
+    border-bottom: 2px solid #fff;
+
+}
+.nav-e{
+    margin-top: 10px;
+}
+.nav-e a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+.nav-e .botao > a{
+    color: #fff;
+}
+.nav-e .botao:hover  > a{
+    background-color: tomato;
+    color: #fff;
+}
+.nav-e .botao-conteudo{
+    background-color: #fff;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 400ms;
+}
+.nav-e .botao-item a{
+    color: #252525;
+}
+.nav-e .botao:hover .botao-conteudo{
+    max-height: 250px;
+}
+.nav-e .botao .botao-item a:hover{
+    background-color:rgba(0,0,0,.2);
+}
+/* PRINCIPAL */
+.main{
+    position: relative;
+    float: left;
+    height: calc(85vh - 40px);
+    width: 70%;
+    overflow: hidden;
+    background-color: #a3a3a3;
+    z-index: -1;
+}
+.main img{
+    position: absolute;
+    width: 120px;
+}
+.main .bola{
+    width: 80px;
+}
+.main #predator{
+    left: 10px;
+    bottom: 0;
+    animation: anim-predator 2.5s linear infinite;
+}
+.main #mercurial{
+    right: 10px;
+    bottom: 0;
+    animation: anim-mercurial 2.5s linear infinite;
+}
+.main #champions{
+    bottom: 10px;
+    left: 130px;
+    animation: anim-champions 2.5s  linear infinite;
+}
+.main #serie-a{
+    bottom: 10px;
+    right: 130px;
+    animation: anim-serie-a 2.5s linear infinite;
+
+}
+/* ANIMACOES */
+@keyframes anim-predator{
+    0%{}
+    15%{transform: translate(10px,-5px) rotate(-10deg)}
+    40%{transform: translate(0,0) rotate(0)}
+    100%{transform: translate(0,0) rotate(0)}
+}
+@keyframes anim-mercurial{
+    0%{}
+    15%{transform: translate(-10px,-5px) rotate(10deg)}
+    40%{transform: translate(0,0) rotate(0)}
+    100%{transform: translate(0,0) rotate(0)}
+}
+
+@keyframes anim-champions{
+    0% {transform: translate(0,0) rotate(0)}
+    10% {transform: translate(0,0) rotate(0)}
+    30% {transform: translate(450px,-420px) rotate(800deg) }
+    45% {transform: translate(690px,-210px) rotate(1200deg) }
+    75% {transform: translate(250px,0px) rotate(600deg) }
+    85% {transform: translate(150px,-35px) rotate(360deg) }
+    100% {transform: translate(0px,0px) rotate(0deg)  }
+}
+@keyframes anim-serie-a{
+    0% {transform: translate(0,0) rotate(0)}
+    10% {transform: translate(0,0) rotate(0)}
+    30% {transform: translate(-450px,-420px) rotate(-800deg) }
+    45% {transform: translate(-690px,-210px) rotate(-1200deg) }
+    75% {transform: translate(-250px,0px) rotate(-600deg) }
+    85% {transform: translate(-150px,-35px) rotate(-360deg) }
+    100% {transform: translate(0px,0px) rotate(0deg)  }
+}
+/* MENU DIREITA */
+.menu-d{
+    float: left;
+    height: calc(85vh - 40px);
+    width: 15%;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #3a3a3a, #5e5e5e);
+}
+.menu-d header h2{
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #252525;
+    font-size: 1.2em;
+    border-bottom: 2px solid #fff;
+
+}
+.menu-d p{
+    color: #fff;
+    text-align: justify;
+    padding: 10px;
+}
+/* RODAPE */
+.rodape{
+    box-sizing: border-box;
+    height: 15vh;
+    width: 100%;
+    float: left;
+    padding: 6vh 20px;
+    background-color:#252525; 
+}
+.rodape p{
+    color: #fff;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 478px) {
+    .nav-bar .botao{
+        position: relative;
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .nav-bar .botao .botao-conteudo{
+        position: relative; 
+    }
+    .menu-e{
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+    }
+    .menu-d{
+        width: 100%;
+    }
+}
