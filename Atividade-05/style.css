@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:none;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+/*MENU-LATERAL*/
+.menu-lateral{
+	width: 20%;
+	height: 100vh;
+	background-color: #555;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: transform 1s;
+	z-index: 3
+}
+.menu-lateral a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	padding: 15px;
+	cursor: pointer;
+}
+.menu-lateral a:hover{
+	background-color: #777;
+}
+.menu-lateral-move{
+	transform: translate(100%, 0);
+}
+/*OVERLAY*/
+.overlay{
+	/*display: none;*/
+	opacity: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,.8);
+	z-index: -2;
+	transition: all 1s linear;
+
+}
+.overlay-action{
+	opacity: 1;
+	z-index: 2;
+}
+/*CONTAINER*/
+.container{
+	float: right;
+	width: 80%;
+}
+/*CABECALHO*/
+.cabecalho{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	background-color: orange;
+
+}
+.cabecalho .menu-icon{
+	display: none;
+	padding: 0 5px;
+	font-size: 30px;
+	background-color: #ad6d06;
+	border-radius: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+/*CORPO DA PAGINA*/
+.corpo{
+	width: 100%;
+	height: 150vh;
+	padding: 30px;
+	background-color: #888;
+}
+/*ACORDEON*/
+.acordeon{
+	width: 80%;
+	margin: auto;
+}
+.acordeon .acordeon-label a{
+	display: block;
+	background-color: yellow;
+	padding: 10px;
+	cursor: pointer;
+}
+.acordeon-conteudo-action{
+	max-height: 400px ! important;
+	color: #eee;
+}
+.acordeon-conteudo{
+	background-color: #aaa;
+	max-height: 0;
+	overflow: hidden;
+}
+.acordeon .acordeon-conteudo p{
+	text-align:center;
+	padding: 10px;
+} 
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 479px){
+	.menu-lateral{
+		left: -40%;
+		width: 40%;
+	}
+	.container{
+		width: 100%;
+	}
+	.cabecalho .menu-icon{
+		display: block;
+	}
+}

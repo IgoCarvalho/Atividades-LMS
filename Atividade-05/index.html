@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade 5</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div class="menu-lateral">
+		<a >link</a>
+		<a >link</a>
+		<a >link</a>
+	</div>
+		<div class="overlay"></div>
+	<div class="container">
+		<header class="cabecalho">
+			<span class="menu-icon"> &#9776;</span>
+			<h1>Minha pagina</h1>
+		</header>
+		<div class="corpo">
+			<div class="acordeon">
+				<div class="acordeon-label">
+					<a class="btn" >Titulo 1</a>
+				</div>
+				<div class="acordeon-conteudo">
+					<p>Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique</p>
+				</div>
+
+			</div>
+			<div class="acordeon">
+				<div class="acordeon-label">
+					<a class="btn">Titulo 2</a>
+				</div>
+				<div class="acordeon-conteudo">
+					<p>Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique</p>
+				</div>
+
+			</div>
+			<div class="acordeon">
+				<div class="acordeon-label">
+					<a class="btn">Titulo 3</a>
+				</div>
+				<div class="acordeon-conteudo">
+					<p>Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique Jessi chique Jessi chique Jessi chiqueJessi chique Jessi chique Jessi chique</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let menu_icon = document.querySelector(".menu-icon");
+		let menu_lateral = document.querySelector(".menu-lateral");
+		let overlay = document.querySelector(".overlay");
+		let acordeon_list = document.querySelectorAll(".acordeon");
+		
+
+		function acao(){
+			menu_lateral.classList.toggle("menu-lateral-move");
+			overlay.classList.toggle("overlay-action");
+		}
+
+		menu_icon.addEventListener("click", acao);
+		overlay.addEventListener("click", acao);
+
+		for(acordeon of acordeon_list){
+			let acordeon_conteudo = acordeon.querySelector(".acordeon-conteudo");
+			let acordeon_btn = acordeon.querySelector(".acordeon-label");
+
+			acordeon_btn.addEventListener("click", function(){
+				acordeon_conteudo.classList.toggle("acordeon-conteudo-action");
+			});
+		}
+
+	</script>
+</body>
+</html>
