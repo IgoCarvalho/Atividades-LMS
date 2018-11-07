@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Trabalho-02</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+	<div class="base">
+		<div class="container">
+			<header class="cabecalho">
+				<h1 class="nome-programa">Diga</h1>
+				<span id="cabecalho-user-name"></span>
+				<button id="l-modal-button" class="btn-entrar">Login</button>
+				<div class="modal-login-overlay">
+					<div class="modal-login-container">
+						<h2>Login</h2>
+						<form id="login-form">
+							<input id="lUserName" type="text" name="lUserName" placeholder="digite seu login">
+							<input id="lButton" type="button" name="lButton" value="Entrar">
+						</form>
+					</div>
+					
+				</div>
+			</header>
+			<div class="principal">
+				<div class="menu-lateral">
+					<div class="grupos-lista">
+						<!-- <div class="grupo">
+							<div class="img-grupo">
+								<img src="./Image/group-image.png">
+							</div>
+							<h2 class="nome-grupo">Nome do grupo</h2>
+						</div> -->
+					</div>
+					<div class="criar-grupo">
+						<button type="">Criar novo grupo</button>
+						<div class="modal-ng-overlay">
+							<div class="modal-ng-container">
+								<h2>Crie um novo grupo</h2>
+								<form id="ng-form">
+									<input id="nGroupName" type="text" name="nGroupName" placeholder="Nome do grupo">
+									<input id="nGroupId" type="text" name="nGroupId" placeholder="Id do grupo">
+									<input id="ngButton" type="button" name="ngButton" value="Criar">
+								</form>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				<div class="bate-papo">
+					<header class="cabecalho-msg">
+						<h2><!-- nome do grupo --></h2>
+					</header>
+					<div class="area-msg">
+						<!-- <div class="balao-msg">
+							<h3 class="dono-msg">joao</h3>
+							<p class="conteudo-msg">oi tudo bem</p>
+						</div> -->
+						<span class="info-batepapo">Aqui aparecerão as suas mensagens.</span>
+					</div>
+
+					<div class="enviar-msg">
+						<form>
+							<input id="new-msg" type="text" name="user-msg" placeholder="Ecreva algo">
+							<button id="btn-new-msg">Enviar</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./Script/script.js"></script>
+</body>
+
+</html>
