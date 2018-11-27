@@ -42,7 +42,7 @@ $(document).ready(function(){
 		});
 
 		$('.drop-login').on('click', function(event) {
-			window.location.assign('login-mobile.html');
+			window.location.assign('loginMobile.html');
 			/* Act on the event */
 		});
 
