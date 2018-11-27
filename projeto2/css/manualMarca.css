@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg ,#fa11a5, #2ac8ba);
+    display: table-header-group;
+}
+
+/*HEADER*/
+
+.cabecalho{
+    background: linear-gradient(90deg ,#fa11a5, #2ac8ba);
+    text-align: center;
+    padding: 1% 10%;
+    color: #fff;
+}
+
+.cabecalho .logo img{
+    height: 2em;
+}
+
+/*APRESENTAÇÃO*/
+
+.apresentacao {
+    background: white;
+    padding: 5% 20%;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-downloadMarca {
+    border: solid #936baf 3px;
+    outline: none;
+    background: none;
+    color: #936baf;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 6%;
+    padding: 1.5% 3%;
+}
+
+.btn-downloadMarca:hover {
+    box-shadow: 0px 0px 5px #6c4686;
+}
+
+/*Marca*/
+
+.marca {
+    background: linear-gradient(90deg ,#fa11a5, #2ac8ba);
+    color: white;
+    padding: 5% 20%;
+    text-align: center;
+    width: 100%;
+}
+
+.marca .cartaoMarca {
+    position: absolute;
+    left: 0;
+    top: 20em;
+    border: #fa11a5 solid;
+    color: #fa11a5; 
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0 10em 10em 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 40;
+    background: white;
+    width: 9em;
+    padding: 1em 2.8em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.marca img{
+    height: 4em;
+}
+
+.marca p{
+    margin-bottom: 8%;
+}
+
+.publi.idVisual {
+    background: linear-gradient(90deg ,#fa11a5, #2ac8ba);
+    text-align: center;
+    padding: 5%;
+    color: white;
+}
+
+.cartao {
+    color: white;
+    padding: 4% 20%;
+    text-align: center;
+    width: 100%;
+}
+
+.cartao p{
+    margin-bottom: 5%;
+}
+
+.cartao .var {
+    height: 20em;
+}
+
+.cartao .prot {
+    height: 30em;
+}
+
+.cartao .cartaoVar {
+    position: absolute;
+    left: 0;
+    top: 36em;
+    border: #fa11a5 solid;
+    color: #fa11a5; 
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0 10em 10em 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 40;
+    background: white;
+    width: 13%;
+    padding: 1.5% 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cartao .cartaoProt {
+    position: absolute;
+    left: 0;
+    top: 63em;
+    border: #fa11a5 solid;
+    color: #fa11a5; 
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0 10em 10em 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 40;
+    background: white;
+    width: 13%;
+    padding: 1.5% 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cartao .cartaoTMin {
+    position: absolute;
+    left: 0;
+    top: 89em;
+    border: #fa11a5 solid;
+    color: #fa11a5; 
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0 10em 10em 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 40;
+    background: white;
+    width: 13%;
+    padding: 1.5% 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.apresentacao .cartaoPaleta {
+    position: absolute;
+    left: 0;
+    top: 124em;
+    border: #2ac8ba solid;
+    color: #2ac8ba; 
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0 10em 10em 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 50;
+    background: white;
+    width: 13%;
+    padding: 1.5% 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cores {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0;
+}
+
+.cores .cor {
+    display: flex;
+    align-items: center;
+    padding: 1.4em;
+    height: 100px;
+    width: 100px;
+    box-shadow: rgb(78, 76, 76) 0 0 20px;
+}
+
+.cartao .cartaoTipo {
+    position: absolute;
+    left: 0;
+    top: 152em;
+    border: #fa11a5 solid;
+    color: #fa11a5; 
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0 10em 10em 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 40;
+    background: white;
+    width: 13%;
+    padding: 1.5% 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.tipo {
+    height: 15em;
+    margin-top: 5%;
+}
+
+.cartao .cartaoUso {
+    position: absolute;
+    left: 0;
+    top: 175em;
+    border: #fa11a5 solid;
+    color: #fa11a5; 
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0 10em 10em 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 40;
+    background: white;
+    width: 13%;
+    padding: 1.5% 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.apresentacao .cartaoAplica {
+    position: absolute;
+    left: 0;
+    top: 202em;
+    border: #2ac8ba solid;
+    color: #2ac8ba; 
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0 10em 10em 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 50;
+    background: white;
+    width: 13%;
+    padding: 1.5% 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.apresentacao img{
+    height: 20em;
+    margin-top: 5%;
+}
+
+/*RODAPE*/
+
+.rodape {
+    background: linear-gradient(90deg ,#fa11a5, #2ac8ba);
+    text-align: center;
+    padding: 2em;
+    color: #fff;
+}
+
+/*FONTES*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(../font/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: Montserrat-extrabold;
+    src: url(../font/Montserrat-ExtraBold.otf);
+}
+
+@media screen and (max-width: 500px){
+    body {
+        background: #936baf !important;
+    }
+
+    .marca .cartaoMarca {
+        top: 20em;
+        width: 9em;
+        padding: 1em 2.8em;
+        font-size: 1em;
+    }
+
+    .cartao .cartaoVar {
+        top: 37.5em;
+        width: 9em;
+        padding: 1em 2.8em;
+        font-size: 1em;
+    }
+    
+    .cartao .cartaoProt {
+        top: 67.5em;
+        width: 9em;
+        padding: 1em 2.8em;
+        font-size: 1em;
+    }
+    
+    .cartao .cartaoTMin {
+        top: 98em;
+        width: 9em;
+        padding: 1em 2.8em;
+        font-size: 1em;
+    }
+    
+    .apresentacao .cartaoPaleta {
+        top: 138em;
+        width: 9em;
+        padding: 1em 2.8em;
+        font-size: 1em;
+    }
+
+    .cartao .cartaoTipo {
+        top: 168em;
+        width: 9em;
+        padding: 1em 2.8em;
+        font-size: 1em;
+    }
+
+    .cartao .cartaoUso {
+        top: 194em;
+        width: 9em;
+        padding: 1em 2.8em;
+        font-size: 1em;
+    }
+    
+    .apresentacao .cartaoAplica {
+        top: 221em;
+        width: 9em;
+        padding: 1em 2.8em;
+        font-size: 1em;
+    }
+}

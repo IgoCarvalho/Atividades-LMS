@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/subPaciente.css">
+    
+        <title>Sua Saúde - Agendar</title>
+    </head>
+    <body>
+        <!-- cabeçalho -->
+        <header class="cabecalho">
+            <div class="logo">
+                <a href="loginPaciente.html"><img src="img/logo.png" alt="Sua Saúde"></a>
+            </div>
+            <nav class="nav-bar">
+                <ul class="menu">
+                    <li class="botao">
+                        <a href="loginPaciente.html" class="btn-menu">Home</a>
+                    </li>
+                    <li class="botao">
+                        <a href="#" class="btn-menu">Histórico</a>
+                    </li>
+                    <li class="botao">
+                        <a href="#" class="btn-menu">Favoritos</a>
+                    </li>
+                    <li class="botao login-a">
+                        <div class="drop-login">
+                            <div class="login-img"></div>
+                        </div>
+                        <div class="menu-login">
+                            <ul>
+                                <a href="#"><li>Perfil</li></a>
+                                <a href="#"><li>Configurações</li></a>
+                                <a href="index.html"><li>Sair</li></a>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- imagem inicial -->
+        <div class="content5 ">
+            <div class="bg-image5"></div>
+        </div>
+
+        <!--tabs-->
+        <div class="agendamento">
+            <p>
+                <h2 class="tituloAg">Agendamento</h2>
+            </p>
+            <hr>
+            <form class="formulario" action="loginPaciente.html">
+                <!-- tab1 -->
+                <div class="tabs">
+                    <div class="form-linha">
+                        <input type="text" name="nome-clinica" placeholder="" class="agInput-m" id="nomeClin" title="" value="Clinica do Luiz" readonly="">
+                        <input type="text" title="" name="servico" placeholder="" class="agInput-m" id="servicoClin" value="Odontologia">
+                    </div>
+                    <input type="text" title="Nome Completo" name="nome-paciente" placeholder="Nome do Paciente" class="agInput-g nome" id="nomeP">
+                    <div class="form-linha">
+                        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"  placeholder="CPF" class="agInput-m cpf" id="cpfP" title="Digite um CPF Válido">
+                        <input type="tel" title="Telefone" name="contato-paciente" placeholder="Contato" class="agInput-m" id="contatoP">
+                    </div>
+                    <div class="form-linha">
+                        <input type="date" name="data-consulta" title="Data" class="agInput-m" id="dataP">
+                        <select name="hora-consulta"  class="agInput-m" id="horaP" title="Horário da Consulta">
+                            <option value="Undefined">Hora</option>
+                            <option value="12:00">12:00</option>
+                        </select>
+                    </div>
+                    <input type="email" name="email-paciente" placeholder="Email" class="agInput-g email" id="emailP">
+                    <div class="botoes">
+                        <button type="button" id="prox" style="float: right;" class="btn-agendamento btn-acao">Proximo</button>
+                    </div>
+                </div>
+                <!-- tab2 -->
+                <div class="tabs" style="display: none;">
+                    <div class="tabs-group">
+                        <div class="customTab">
+                            <input type="radio" name="formaPg" value="dinheiro" id="pg-din">
+                            <label for="pg-din">Pagamento em dinheiro</label>
+                        </div>
+                        <div class="customTab">
+                            <input type="radio" name="formaPg" value="alternativa" id="pg-aut" checked="">
+                            <label for="pg-aut">Outras formas de pagamento</label>
+                        </div>
+                    </div>
+                    <div class="pg-aut">
+                        <div class="radio-group">
+                            <div class="customRadio">
+                                <input type="radio" name="pgAut" value="boleto" id="pg-boleto">
+                                <label for="pg-boleto">Boleto</label>
+                            </div>
+                            <div class="customRadio">
+                                <input type="radio" name="pgAut" value="cartao" id="pg-cartao" checked="checked">
+                                <label for="pg-cartao">Cartao de Credito</label>
+                            </div>
+                        </div>
+                        <div class="boleto-form aut-form" id="boleto" style="display: none;">
+                            <input type="text" name="cpf-boleto" placeholder="CPF" class="agInput-m" id="cpfPg">
+                            <p>Insira seu CPF para a criação do Boleto Bancario.</p>
+                        </div>
+                        <div class="cartao-form aut-form" id="cartao">
+                            <div class="form-linha">
+                                <div class="cartao-group">
+                                    <div class="cartaoRadio">
+                                        <input type="radio" name="cartao" value="masterCard" id="masterCard" >
+                                        <label for="masterCard"><img src="./img/bancos/mastercard.png" alt="icone Master Card" title="Master Card"></label>
+                                    </div>
+                                    <div class="cartaoRadio">
+                                        <input type="radio" name="cartao" value="maestro" id="maestro" >
+                                        <label for="maestro"><img src="./img/bancos/maestro.png" alt="icone Maestro" title="Maestro"></label>
+                                    </div>
+                                    <div class="cartaoRadio">
+                                        <input type="radio" name="cartao" value="visa" id="visa" >
+                                        <label for="visa"><img src="./img/bancos/visa.png" alt="icone Visa" title="Visa"></label>
+                                    </div>
+                                </div>
+                                
+                                <input type="number" name="numero-cartao" placeholder="Número do Cartão" class="agInput-m" id="numCartao">
+                                
+                            </div>
+                            <div class="form-linha">
+                                <input type="text" name="validade-cartao" placeholder="Data de validade" class="agInput-m" id="validade-cartao">
+                                <input type="number" name="codigo-seguranca" placeholder="Codigo de segurança" class="agInput-m" id="codigo-seguranca">
+                                
+                            </div>
+                            <!-- nome do proprietatio -->
+                            <div class="form-linha">
+                                <input type="text" name="p-nome" placeholder="Primeiro nome" class="agInput-m" id="PnomePg">
+                                <input type="text" name="s-nome" placeholder="Segundo nome" class="agInput-m" id="SnomePg">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="botoes">
+                        <button type="button" id="ant" class="btn-agendamento btn-acao">Voltar</button>
+                        <button type="submit" type="submit" class="btn-agendamento btn-submit" style="float: right;">Confirmar Agendamento</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- rodapé -->
+        <footer class="rodape">
+            &copy; Todos os direitos reservados - JAMIK Desenvolvimento
+        </footer>
+
+        <script src="js/index.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/agendamento.js"></script>
+
+</body>
+
+</html>

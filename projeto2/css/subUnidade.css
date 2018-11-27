@@ -1,0 +1,295 @@
+/* MENU */
+
+.nav-bar .menu .botao:hover .btn-menu{
+    background: #f4f6f7;
+    color: black;
+}
+
+.menu .drop-login .login-img{
+    background: url(./img/icones/perfil.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1.1em;
+}
+
+.menu .drop-login:hover {
+    cursor: pointer;
+    background: #f4f6f7;
+}
+
+.menu .drop-login:hover .login-img {
+    background: url(./img/icones/perfil-h.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1.1em;
+}
+
+.drop-login img{
+    height: 1em;
+}
+
+.menu-login {
+    padding: 0px !important;
+}
+
+.menu-login li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 1em 1em;
+}
+
+.menu-login li:hover {
+    background: #fa11a5;
+    color: white;
+}
+
+/* IMAGEM */
+
+.content1 {
+    height: 15em;
+}
+
+.content1 .bg-image4 {
+    background: url("../img/img07.JPG") no-repeat;
+    background-size: cover;
+    background-position-y: -30em;
+    opacity: 0.9;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*PESQUISAR*/
+
+.content2 {
+    margin: auto;
+    background: white;
+    color: #fa11a5;
+    padding: 0% 10px 3.5%;
+}
+
+.pesquisa {
+    border: 2px #fa11a5 solid;
+    border-radius: 25px;
+    background: #fff;
+    display: inline;
+    overflow: hidden;
+    padding: 10px 20px;
+    color: #000;
+    outline: none;
+    margin: auto;
+}
+
+.btnPesquisar{
+    border: #fa11a5 2px solid;
+    border-radius: 5px;
+    display: inline;
+    overflow: hidden;
+    color: #fa11a5;
+}
+
+.btnPesquisar:hover{
+    box-shadow: 0px 0px 5px #fa11a5;
+}
+
+/*RANGE*/
+
+.precoConsulta input:focus {
+    outline: none;
+}
+
+.precoConsulta input::-webkit-slider-runnable-track {
+    width: 2em;
+    height: 2.5px;
+    cursor: pointer;
+    background: rgba(156, 160, 190, 0.29);
+    border-radius: 9.6px;
+}
+
+.precoConsulta input::-webkit-slider-thumb {
+    height: 1.4em;
+    width: 1.2em;
+    border-radius: 40%;
+    background: #ff407e;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8.5px;
+}
+
+.precoConsulta input:focus::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.29);
+    border: 1px rgba(156, 160, 190, 0.29) solid;
+}
+
+.precoConsulta input::-ms-fill-lower {
+    background: rgba(38, 40, 58, 0.29);
+    border-radius: 19.2px;
+}
+
+.precoConsulta input::-ms-fill-upper {
+    background: rgba(156, 160, 190, 0.29);
+    border-radius: 19.2px;
+}
+
+.precoConsulta input::-ms-thumb {
+    height: 25px;
+    width: 17px;
+    border-radius: 47px;
+    background: #ff407e;
+    cursor: pointer;
+    height: 2px;
+}
+
+.precoConsulta input:focus::-ms-fill-lower {
+    background: rgba(156, 160, 190, 0.29);
+}
+
+.precoConsulta input:focus::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.29);
+}
+
+/*CARTÃO PESQUISA*/
+
+.cookies{
+    margin: auto;
+    width: 70%;
+}
+
+.cookies .pesq1 {
+    background: #fff;
+    margin-top: 25px;
+    padding: 4%;
+}
+
+.cookies .pesq1 .nota{
+    background: url(../img/notaClinica/3.png);
+    background-size: cover;
+    height: 1.1em;
+    width: 3em;
+    margin-top: 1%;
+}
+
+.cookies .pesq1 .textoPesq{
+    color: rgb(143, 143, 143);
+    font-size: 12px;
+    width: 50%;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.btnFichaPesq{
+    border: none;
+    padding: 0.5% 1%;
+    background: #2ac8ba;
+    color: white;
+    font-size: 1em;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.btnFichaPesq img{
+    height: 1em;
+}
+
+.cookies .pesq1 .slider{
+    float: right;
+    overflow: hidden;
+    background: url(../img/clinica/clinica1.jpg);
+    background-size: cover;
+    height: 13em;
+    width: 18em;
+    border-radius: 10px;
+}
+
+/*OVERLAY*/
+
+.overlayInfo {
+    background: rgba(244, 246, 247, 0.500);
+    z-index: 100;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding-top: 10%;
+    background-attachment: fixed;
+    display: none;
+}
+
+.overlayInfo .quadroInfo::-webkit-scrollbar{
+    background: #e2e3e4;
+    width: 0.4em;
+    border-radius: 10px;
+}
+
+.overlayInfo .quadroInfo::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #2ac8ba;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+ }
+
+.overlayInfo .quadroInfo {
+    background: #fff;
+    padding: 3%;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    box-shadow: 0 0 30px rgb(53, 53, 53);
+    position: relative;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.quadroInfo .btn-fechar{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadroInfo .nota{
+    background: url(../img/notaClinica/3.png);
+    background-size: cover;
+    height: 1.1em;
+    width: 3em;
+    margin-top: 1%;
+}
+
+.quadroInfo .textoPesq{
+    color: rgb(143, 143, 143);
+    font-size: 12px;
+    width: 25%;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.quadroInfo .contatoInfo{
+    color: rgb(143, 143, 143);
+    font-size: 12px;
+    width: 25%;
+    margin-top: 2%;
+    margin-right: 5%;
+    text-align: justify;
+    float: right;
+}
+
+.quadroInfo .slider{
+    float: right;
+    overflow: hidden;
+    background: url(../img/clinica/clinica1.jpg);
+    background-size: cover;
+    height: 13em;
+    width: 18em;
+    border-radius: 10px;
+}

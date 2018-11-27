@@ -1,0 +1,93 @@
+.his-container{
+	width: 100%;
+	padding: 5% 10%;
+}
+
+.his-top-btns{
+	width: 100%;
+	display: flex;
+		justify-content: center;
+}
+
+.his-btn{
+	font-size: 1em;
+	padding: 10px;
+	margin: 0 5px;
+	border:none;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #fa11a5;
+}
+
+.cards-container{
+	width: 100%;
+	padding: 2% 0;
+}
+
+.his-card{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #fff;
+	color: #333;
+	border-radius: 5px;
+}
+
+.action-btns{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.card-botao input[type="checkbox"] {
+	position: absolute;
+	left: -9999px;
+}
+
+.card-botao input[type="checkbox"]+label {
+    font-size: 1em;
+    position: relative;
+    padding: 0 0 0 25px;
+    cursor: pointer;
+}
+
+.card-botao input[type="checkbox"]+label:before {
+	content: '';
+	background: #fff;
+	border: 2px solid #fa11a5;
+	height: 16px;
+	width: 16px;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card-botao input[type="checkbox"]+label:after {
+	content: '';
+	background: #fa11a5;
+	width: 12px;
+	height: 12px;
+	border-radius: 3px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	opacity: 0;
+	transform: scale(2);
+	transition: transform 0.3s linear, opacity 0.3s linear;
+}
+
+.card-botao input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.action-btns .btn-del{
+	color: #fa11a5;
+	font-size: 3em;
+	cursor: pointer;
+}

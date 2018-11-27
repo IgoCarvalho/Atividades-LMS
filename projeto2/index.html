@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">        
+        <link rel="stylesheet" href="css/style.css">
+
+        <meta name="theme-color" content="#fa11a5">
+    
+        <title>Sua Saúde</title>
+    </head>
+
+<body>
+    <!-- cabeçalho -->
+    <header class="cabecalho">
+        <div class="open-menu-btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="pesquisa-c">
+            <form>
+                <input type="text" name="">
+                <button type="submit" class="btn-pesquisa-c"></button>
+            </form>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Sua Saúde"></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="menu">
+                <li class="botao">
+                    <a href="index.html" class="btn-menu">Home</a>
+                </li>
+                <li class="botao">
+                    <a href="sobreNós.html" class="btn-menu">Sobre Nós</a>
+                </li>
+                <li class="botao">
+                    <a href="Contato.html" class="btn-menu">Contato</a>
+                </li>
+                <li class="botao">
+                    <a href="cadastroPaciente.html" class="btn-menu">Cadastre-se</a>
+                </li>
+                <li class="botao login-a">
+                    <div class="drop-login">Login</div>
+                    <div class="menu-login">
+                        <form class="login-form" action="loginPaciente.html">
+                            <input class="campo-login i-pessoa" type="text" placeholder="Login">
+                            <input class="campo-login i-cadeado" type="password" placeholder="Senha">
+                            <input class="btn-login" type="submit" value="Entrar">
+                        
+                            <section class="check-termos">
+                                <input type="checkbox" name="lembrarSenha">
+                                <label for="lembrarSenha">Lembrar minha senha</label>
+                            </section>
+                            <a href="#" class="esqueceuSenha">Esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- imagem inicial -->
+    <div class="content1">
+        <div class="bg-image"></div>
+        <h2>Encontre locais onde você possa<br>
+                obter informações, marcar<br>
+                consultas ou exames<br>
+                médicos.
+        </h2>
+    </div>
+
+    <!-- propagandas -->
+    <div class="propagandas">
+        <div class="prop">
+            <img src="img/icones/pesq.png" alt="icone de pesquisar">
+            <p>Procure pelo médico que seja especialista no seu problema em um estabelecimento de qualidade!</p>
+        </div>
+        <div class="prop">
+            <img src="img/icones/local.png" alt="icone de localizar">
+            <p>Mais perto de você!</p>
+        </div>
+        <div class="prop">
+            <img src="img/icones/money.png" alt="">
+            <p>Com facilidade no pagamento!</p>
+        </div>
+    </div>
+
+    <!-- frase e pesquisar -->
+    <div class="content2">
+        <p>
+            Uma plataforma completa que te acompanha do começo ao 
+            fim, menos trabalho e mais praticidade para você!
+        </p>
+        <form action="">
+            <input type="search" name="" class="pesquisa" placeholder="Busque algo">
+            <input type="button" value="Pesquisar" class="btnPesquisar">
+        </form>
+    </div>
+
+    <!-- formulario cadastro clinica -->
+    <div class="saude">
+        <!-- <div class="undSaude"></div> -->
+        <img src="img/icones/undSaude.png" alt="">
+        <p>
+            Você representa uma unidade de saúde e se interessou pelo 
+            serviço?
+            Seja nosso parceiro!
+        </p>
+        <input type="button" value="Inscreva-se" class="increveUnd">
+    </div>
+
+    <!-- rodapé -->
+    <footer class="rodape">
+        &copy; Todos os direitos reservados - JAMIK Desenvolvimento
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

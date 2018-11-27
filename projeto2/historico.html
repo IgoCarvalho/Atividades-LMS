@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/subPaciente.css">
+    
+        <title>Sua Saúde - Histórico</title>
+    </head>
+
+<body>
+    <!-- cabeçalho -->
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="loginPaciente.html"><img src="img/logo.png" alt="Sua Saúde"></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="menu">
+                <li class="botao">
+                    <a href="loginPaciente.html" class="btn-menu">Home</a>
+                </li>
+                <li class="botao">
+                    <a href="historico.html" class="btn-menu">Histórico</a>
+                </li>
+                <li class="botao">
+                    <a href="favoritos.html" class="btn-menu">Favoritos</a>
+                </li>
+                <li class="botao login-a">
+                    <div class="drop-login">
+                        <div class="login-img"></div>
+                    </div>
+                    <div class="menu-login">
+                        <ul>
+                            <a href="#"><li>Perfil</li></a>
+                            <a href="#"><li>Configurações</li></a>
+                            <a href="index.html"><li>Sair</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- imagem inicial -->
+    <div class="content1">
+        <div class="bg-image4"></div>
+    </div>
+
+    <!-- historico -->
+    <div class="his-container">
+        <header class="his-top-btns">
+            <button class="his-btn">Apagar todos</button>
+            <button class="his-btn">Selecionar todos</button>
+            <button class="his-btn">Eliminar selecionados</button>
+        </header>
+        <div class="cards-container">
+            
+            <div class="his-card">
+                <p class="his-clinica">Clinica do Zé</p>
+                <span>></span>
+                <p class="his-servico">Dentista</p>
+                <span>></span>
+                <p class="his-marcado">Agendamento:
+                    <span>20/10/2018</span></p>
+                <p class="his-agendado">Agendado:
+                    <span>20/10/2018</span></p>
+                <div class="action-btns">
+                    <div class="card-botao">
+                        <input type="checkbox" name="optionss" value="ew" id="opcao">
+                        <label for="opcao"></label>
+                    </div>
+                    <div class="btn-del">&times;</div>
+                </div>
+            </div>
+            <div class="his-card">
+                <p class="his-clinica">Clinica do Zé</p>
+                <span>></span>
+                <p class="his-servico">Dentista</p>
+                <span>></span>
+                <p class="his-marcado">Agendamento:
+                    <span>20/10/2018</span></p>
+                <p class="his-agendado">Agendado:
+                    <span>20/10/2018</span></p>
+                <div class="action-btns">
+                    <div class="card-botao">
+                        <input type="checkbox" name="option1" id="opcao1">
+                        <label for="opcao1"></label>
+                    </div>
+                    <div class="btn-del">&times;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rodapé -->
+    <footer class="rodape sobre">
+        &copy; Todos os direitos reservados - JAMIK Desenvolvimento
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

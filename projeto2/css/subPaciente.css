@@ -1,0 +1,762 @@
+/* MENU */
+
+.nav-bar .menu .botao:hover .btn-menu{
+    background: #f4f6f7;
+    color: black;
+}
+
+.menu .drop-login .login-img{
+    background: url(../img/icones/perfil.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1.1em;
+}
+
+.menu .drop-login:hover {
+    cursor: pointer;
+    background: #f4f6f7;
+}
+
+.menu .drop-login:hover .login-img {
+    background: url(../img/icones/perfil-h.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1.1em;
+}
+
+.drop-login img{
+    height: 1em;
+}
+
+.menu-login {
+    padding: 0px !important;
+}
+
+.menu-login li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 1em 1em;
+}
+
+.menu-login li:hover {
+    background: #fa11a5;
+    color: white;
+}
+
+/* IMAGEM */
+
+.content1 {
+    height: 15em;
+}
+
+.content1 .bg-image4 {
+    background: url("../img/img07.JPG") no-repeat;
+    background-size: cover;
+    background-position-y: -30em;
+    opacity: 0.9;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*PESQUISAR*/
+
+.content2 {
+    margin: auto;
+    background: white;
+    color: #fa11a5;
+    padding: 0% 10px 3,5%
+}
+
+.pesquisa {
+    border: 2px #fa11a5 solid;
+    border-radius: 25px;
+    background: #fff;
+    display: inline;
+    overflow: hidden;
+    padding: 10px 20px;
+    color: #000;
+    outline: none;
+    margin: auto;
+}
+
+.btnPesquisar{
+    border: #fa11a5 2px solid;
+    border-radius: 5px;
+    display: inline;
+    overflow: hidden;
+    color: #fa11a5;
+}
+
+.btnPesquisar:hover{
+    box-shadow: 0px 0px 5px #fa11a5;
+}
+
+/*FILTROS*/
+
+.filtros {
+    margin-top: 2%;
+}
+
+.precoConsulta {
+    font-size: 15.5px;
+}
+
+.precoConsulta input{
+    -webkit-appearance: none;
+    width: 12em;
+    margin: 11.5px 1% 11.5px 1%;
+}
+
+.filtros .proximidade{
+    font-size: 15.5px;
+    margin-right: 1%;
+}
+
+.filtros .proximidade input{
+    margin: 0 0.5% 0 1%;
+}
+
+.filtros .popularidade {
+    border-radius: 10px;
+    margin: 0 1% 0 1%;
+    padding: 0.3% 1.5%;
+    outline: none;
+}
+
+.filtros .popularidade option{
+    width: 20px;
+}
+
+.filtros .cidadePaciente{
+    border-radius: 10px;
+    margin: 0 1% 0 1%;
+    width: 12em;
+    padding: 0.3% 1%;
+    outline: none;
+    border: rgb(139, 139, 139) 1px solid;
+}
+
+.filtros .planoSaude{
+    border-radius: 10px;
+    margin: 0 1% 0 1%;
+    width: 12em;
+    padding: 0.3% 1%;
+    outline: none;
+}
+
+/*RANGE*/
+
+.precoConsulta input:focus {
+    outline: none;
+}
+
+.precoConsulta input::-webkit-slider-runnable-track {
+    width: 2em;
+    height: 2.5px;
+    cursor: pointer;
+    background: rgba(156, 160, 190, 0.29);
+    border-radius: 9.6px;
+}
+
+.precoConsulta input::-webkit-slider-thumb {
+    height: 1.4em;
+    width: 1.2em;
+    border-radius: 40%;
+    background: #ff407e;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8.5px;
+}
+
+.precoConsulta input:focus::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.29);
+    border: 1px rgba(156, 160, 190, 0.29) solid;
+}
+
+.precoConsulta input::-ms-fill-lower {
+    background: rgba(38, 40, 58, 0.29);
+    border-radius: 19.2px;
+}
+
+.precoConsulta input::-ms-fill-upper {
+    background: rgba(156, 160, 190, 0.29);
+    border-radius: 19.2px;
+}
+
+.precoConsulta input::-ms-thumb {
+    height: 25px;
+    width: 17px;
+    border-radius: 47px;
+    background: #ff407e;
+    cursor: pointer;
+    height: 2px;
+}
+
+.precoConsulta input:focus::-ms-fill-lower {
+    background: rgba(156, 160, 190, 0.29);
+}
+
+.precoConsulta input:focus::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.29);
+}
+
+/*CARTÃO PESQUISA*/
+
+.cookies{
+    margin: auto;
+    width: 70%;
+}
+
+.cookies .pesq1 {
+    background: #fff;
+    margin-top: 25px;
+    padding: 4%;
+}
+
+.cookies .pesq1 .nota{
+    background: url(../img/notaClinica/3.png);
+    background-size: cover;
+    height: 1.1em;
+    width: 3em;
+    margin-top: 1%;
+}
+
+.cookies .pesq1 .textoPesq{
+    color: rgb(143, 143, 143);
+    font-size: 12px;
+    width: 50%;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.btnFichaPesq{
+    border: none;
+    padding: 0.5% 1%;
+    background: #2ac8ba;
+    color: white;
+    font-size: 1em;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.btnFichaPesq img{
+    height: 1em;
+}
+
+.cookies .pesq1 .slider{
+    float: right;
+    overflow: hidden;
+    background: url(../img/clinica/clinica1.jpg);
+    background-size: cover;
+    height: 13em;
+    width: 18em;
+    border-radius: 10px;
+}
+
+/*OVERLAY*/
+
+.overlayInfo {
+    background: rgba(244, 246, 247, 0.500);
+    z-index: 100;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding-top: 10%;
+    background-attachment: fixed;
+    display: none;
+}
+
+.overlayInfo .quadroInfo::-webkit-scrollbar{
+    background: #e2e3e4;
+    width: 0.4em;
+    border-radius: 10px;
+}
+
+.overlayInfo .quadroInfo::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #2ac8ba;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+ }
+
+.overlayInfo .quadroInfo {
+    background: #fff;
+    padding: 3%;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    box-shadow: 0 0 30px rgb(53, 53, 53);
+    position: relative;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.quadroInfo .btn-fechar{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadroInfo .nota{
+    background: url(../img/notaClinica/3.png);
+    background-size: cover;
+    height: 1.1em;
+    width: 3em;
+    margin-top: 1%;
+}
+
+.quadroInfo .textoPesq{
+    color: rgb(143, 143, 143);
+    font-size: 12px;
+    width: 25%;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.quadroInfo .contatoInfo{
+    color: rgb(143, 143, 143);
+    font-size: 12px;
+    width: 25%;
+    margin-top: 2%;
+    margin-right: 5%;
+    text-align: justify;
+    float: right;
+}
+
+.quadroInfo .slider{
+    float: right;
+    overflow: hidden;
+    background: url(../img/clinica/clinica1.jpg);
+    background-size: cover;
+    height: 13em;
+    width: 18em;
+    border-radius: 10px;
+}
+
+/*AGENDAR*/
+
+.content5 {
+    height: 15em;
+    margin-bottom: 1.5%;
+}
+
+.content5 .bg-image5 {
+    background: url("../img/img08.JPG") no-repeat;
+    background-size: cover;
+    background-position-y: -25em;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*AGENDAMENTO*/
+
+.agendamento {
+    width: 80%;
+    height: 35em;
+    padding: 5% 10%;
+    background: white;
+    margin: auto;
+}
+
+.agendamento .tituloAg {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #24b3a7;
+}
+
+.agendamento hr{
+    border-color: #2ac8ba;
+    margin-bottom: 3em;
+}
+.agendamento .infoAgCo {
+    margin-bottom: 2em;
+    color: red;
+}
+
+/*formulario*/
+
+.formulario{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+/*paginas*/
+
+.tabs{
+    padding: 0 15%;
+}
+
+.form-linha{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.agInput-g {
+    font-size: 1em;
+    border: 1px solid #abc;
+    display: block;
+    border-radius: 25px;
+    background: #fff;
+    width: 100%;
+    height: 2%;
+    padding: 10px 20px;
+    color: #000;
+    outline: none;
+    margin: 1em 0;
+}
+
+.agInput-m{
+    font-size: 1em;
+    border: 1px solid #abc;
+    border-radius: 25px;
+    background: #fff;
+    width: 45%;
+    height: 2%;
+    padding: 10px 20px;
+    color: #000;
+    outline: none;
+}
+
+.tabs-group{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #24b3a7;
+    margin-bottom: 15px;
+    padding: 15px ;
+    padding-top: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.customTab input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .customTab input[type="radio"]+label {
+    background-color: #f5f5f5; 
+    border-radius: 10px 10px 0 0;     
+    /* width: 100%; */
+    /* height: 100%; */
+    font-size: 1em;
+    position: relative;
+    padding: 15px;
+    /* padding: 3px 0 0 25px; */
+    cursor: pointer;
+  }
+  .customTab input[type="radio"]:checked + label {
+    background-color: #fff;
+    border: 1px solid #24b3a7;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* xxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.radio-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* custom radio */
+
+.customRadio{
+    margin-bottom: 10px;
+}
+
+.customRadio input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.customRadio input[type="radio"]+label {
+    font-size: 1em;
+    position: relative;
+    padding: 3px 0 0 25px;
+    cursor: pointer;
+}
+
+.customRadio input[type="radio"]+label:before {
+  content: '';
+  background: #fff;
+  border: 2px solid #24b3a7;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.customRadio input[type="radio"]+label:after {
+  content: '';
+  background: #24b3a7;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  opacity: 0;
+  transform: scale(2);
+  transition: transform 0.3s linear, opacity 0.3s linear;
+}
+
+.customRadio input[type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* cartao radio */
+.cartao-group{
+    width: 45%;
+    display: flex;
+        justify-content: space-between;
+}
+
+.cartaoRadio input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cartaoRadio input[type="radio"]+label > img {
+    width: 70px;
+    padding: 3px;
+    border: 2px solid #abc;
+    border-radius: 25px;
+    /*margin-right: 5px;*/
+    /*background-color: #3ab;*/
+}
+
+.cartaoRadio input[type="radio"]+label {
+    /*font-size: 1em;*/
+    position: relative;
+    /*padding: 3px 0 0 25px;*/
+    cursor: pointer;
+}
+
+.cartaoRadio input[type="radio"]:checked + label > img {
+  border-color: #24b3a7;
+}
+
+
+/*botoes*/
+
+.botoes{
+    position: absolute;
+        bottom: 0;
+        left: 0;
+    width: 100%;
+    margin-top: 2em;
+    padding: 0 15%;
+}
+
+.btn-agendamento{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    height: 2%;
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+    /*left: 15em;*/
+    /*top: 1em;*/
+    outline: none;
+    background-color: #24b3a7;
+    cursor: pointer;
+}
+
+.btn-submit{
+    padding: 10px;
+}
+
+/*formuarios auternativos*/
+
+.boleto-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.boleto-form p{
+    font-size: 1em;
+    margin: 1em;
+}
+
+/* HISTÓRICO */
+
+.his-container{
+	width: 100%;
+	padding: 5% 10%;
+}
+
+.his-top-btns{
+	width: 100%;
+	display: flex;
+		justify-content: center;
+}
+
+.his-btn{
+	font-size: 1em;
+	padding: 10px;
+	margin: 0 5px;
+	border:none;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #fa11a5;
+}
+
+.cards-container{
+	width: 100%;
+	padding: 2% 0;
+}
+
+.his-card{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #fff;
+	color: #333;
+	border-radius: 5px;
+}
+
+.action-btns{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.card-botao input[type="checkbox"] {
+	position: absolute;
+	left: -9999px;
+}
+
+.card-botao input[type="checkbox"]+label {
+    font-size: 1em;
+    position: relative;
+    padding: 0 0 0 25px;
+    cursor: pointer;
+}
+
+.card-botao input[type="checkbox"]+label:before {
+	content: '';
+	background: #fff;
+	border: 2px solid #fa11a5;
+	height: 16px;
+	width: 16px;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card-botao input[type="checkbox"]+label:after {
+	content: '';
+	background: #fa11a5;
+	width: 12px;
+	height: 12px;
+	border-radius: 3px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	opacity: 0;
+	transform: scale(2);
+	transition: transform 0.3s linear, opacity 0.3s linear;
+}
+
+.card-botao input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.action-btns .btn-del{
+	color: #fa11a5;
+	font-size: 3em;
+	cursor: pointer;
+}
+
+/* Chat */
+
+.chat{
+    width: 300px;
+    z-index: 100;
+    position: fixed;
+    bottom: -50px;
+    right: 100px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.chat .foto{
+    border-radius: 50%;
+    background-color: #abc;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;  
+}
+
+.chat .conversa{
+    padding: 10px 0;
+    bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.chat .titulo{
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    background-color: #abc;
+}
+
+.chat .conteudo{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 30px;
+    height: 0px;
+    background-color: rgb(136, 136, 136);
+    padding: 0 10px;
+}
+
+.chat .show{
+    height: 250px;
+}
+
+.chat .input{
+    overflow: hidden;
+    position: relative;
+    bottom: 0px;
+    outline: none;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}

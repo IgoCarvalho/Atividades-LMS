@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/subPaciente.css">
+    
+        <title>Sua Saúde - Paciente</title>
+    </head>
+
+<body>
+    <!-- cabeçalho -->
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="loginPaciente.html"><img src="img/logo.png" alt="Sua Saúde"></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="menu">
+                <li class="botao">
+                    <a href="loginPaciente.html" class="btn-menu">Home</a>
+                </li>
+                <li class="botao">
+                    <a href="historico.html" class="btn-menu">Histórico</a>
+                </li>
+                <li class="botao">
+                    <a href="favoritos.html" class="btn-menu">Favoritos</a>
+                </li>
+                <li class="botao login-a">
+                    <div class="drop-login">
+                        <div class="login-img"></div>
+                    </div>
+                    <div class="menu-login">
+                        <ul>
+                            <a href="#"><li>Perfil</li></a>
+                            <a href="#"><li>Configurações</li></a>
+                            <a href="index.html"><li>Sair</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- imagem inicial -->
+    <div class="content1">
+        <div class="bg-image4"></div>
+    </div>
+
+    <!--pesquisar -->
+    <div class="content2">
+        <form action="">
+            <input type="search" name="" class="pesquisa" placeholder="Busque algo">
+            <input type="submit" value="Pesquisar" class="btnPesquisar">
+
+            <div class="filtros">
+                <span class="precoConsulta">
+                    Preço: <input type="range" name="precoConsulta" min="50" max="10000" id="">
+                </span>|
+                <span class="proximidade">
+                    <input type="checkbox" name="proximidade">Proximidade
+                </span>|
+                <select name="popularidade" class="popularidade">
+                    <option value="Nenhum">Popularidade</option>
+                    <option value="1.0">1.0</option>
+                    <option value="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                    <option value="5.0">5.0</option>
+                </select>|
+                <input type="text" placeholder="Cidade" name="cidade" class="cidadePaciente">|
+                <select name="planoSaude" class="planoSaude">
+                    <option value="Nenhum">Planos de Saúde</option>
+                    <option value="Unimed">Unimed</option>
+                    <option value="Hapvida">Hapvida</option>
+                    <option value="SulAmérica">SulAmérica</option>
+                    <option value="Bradesco Saúde">Bradesco Saúde</option>
+                    <option value="Amil">Amil</option>
+                    <option value="Gamec">Gamec</option>
+                </select>
+            </div>
+
+        </form>
+    </div>
+
+    <!--pesquisas frequentes/cookies-->
+    <div class="cookies">
+        <div class="pesq1">
+            <div class="slider"></div>
+
+            <h2>Clinimagem</h2>
+            <div class="nota"></div>
+
+            <p class="textoPesq">
+                MAMOGRAFIA DIGITAL, RAIO X  DIGITAL, LABORATÓRIO,
+                ULTRASOM 4D, ULTRASSOM COLORIDO, DENSITOMETRIA ÓSSEA,
+                ENDOSCOPIA DIGESTIVA ALTA, ELETROCARDIOGRAMA DIGITAL,
+                MAPA, HOLTER, ECOCARDIOGRAMA, DERMATOLOGISTA, OTORRINOLARINGOLOGISTA,
+                ORTOPEDISTA, PEDIATRA, GINECOLOGISTA, CLINICO GERAL,
+                GASTROENTEROLOGISTA, CARDIOLOGISTA, NEUROLOGISTA.
+            </p>
+
+            <input type="button" value="Informações" class="btnFichaPesq">
+            <input type="button" value="Guiar-me" class="btnFichaPesq">
+            <a href="agendar.html">
+                <button class="btnFichaPesq">Agendar</button>
+            </a>
+            <input id="btn-chat" type="button" value="Chat" class="btnFichaPesq">
+            <button class="btnFichaPesq"><img src="img/icones/favoritar.png" alt=""></button>
+        </div>
+    </div>
+
+    <!-- rodapé -->
+    <footer class="rodape">
+        &copy; Todos os direitos reservados - JAMIK Desenvolvimento
+    </footer>
+
+    <!-- overlay -->
+    <div class="overlayInfo">
+        <div class="quadroInfo">
+            <span class="btn-fechar">x</span>
+            <div class="slider"></div>
+
+            <h2>Clinimagem</h2>
+            <div class="nota"></div>
+            <div class="contatoInfo">
+                <b>Contato:</b> (89) 987651234 <br>
+                <b>Endereço:</b> Av. Dos Namorados, 123, Quixadá
+            </div>
+            <p class="textoPesq">
+                MAMOGRAFIA DIGITAL, RAIO X  DIGITAL, LABORATÓRIO,
+                ULTRASOM 4D, ULTRASSOM COLORIDO, DENSITOMETRIA ÓSSEA,
+                ENDOSCOPIA DIGESTIVA ALTA, ELETROCARDIOGRAMA DIGITAL,
+                MAPA, HOLTER, ECOCARDIOGRAMA, DERMATOLOGISTA, OTORRINOLARINGOLOGISTA,
+                ORTOPEDISTA, PEDIATRA, GINECOLOGISTA, CLINICO GERAL,
+                GASTROENTEROLOGISTA, CARDIOLOGISTA, NEUROLOGISTA.
+            </p>
+            
+        </div>
+    </div>
+
+    <!-- chat -->
+    <div class="chat">
+        <div class="titulo">Clinimagem</div>
+        <div class="conteudo">
+            <div class="conversa">
+                <div class="foto"></div>
+                <span>Olá, Como posso ajudar?</span>
+            </div>
+            <form>
+                <input class="input" placeholder="Digite uma mensagem" type="text">
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

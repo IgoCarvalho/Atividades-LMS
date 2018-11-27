@@ -1,0 +1,239 @@
+/*SOBRE NÓS*/
+
+.content3{
+    position: relative;
+    height: 20em;
+    background: #fff;
+    z-index: -2;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content3 .bg-sobrenos{
+    background: url("../img/img03.JPG") no-repeat;
+    background-position-y: 40%;
+    background-size: cover;
+    filter: blur(0.1em);
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.content3 .bg-contato{
+    background: url("../img/img02.JPG") no-repeat;
+    background-position-y: 60%;
+    background-size: cover;
+    filter: blur(0.1em);
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*PUBLICAÇÕES*/
+
+.publicacao {
+    margin: auto;
+    width: 80%
+}
+
+.publi {
+    border-radius: 5px;
+    background: white;
+    padding: 7.5%;
+    margin: 2% 1%;
+    text-align: justify;
+}
+
+.publi .tituloPubli {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #24b3a7;
+}
+
+.publi hr{
+    border-color: #2ac8ba;
+    margin-bottom: 2em;
+}
+
+.publi .textoPubli {
+    margin-bottom: 2em;
+}
+
+.publi.contato  {
+    padding: 5%;
+}
+
+.publi.cartaoEquipe {
+    background: none;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.publi.cartaoEquipe .equipe {
+    background: white;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 1%;
+}
+
+.publi.idVisual {
+    background: linear-gradient(90deg ,#fa11a5, #2ac8ba);
+    text-align: center;
+    padding: 5%;
+    color: white;
+}
+
+/*Contato*/
+
+.publi.contato .textoTitulo {
+    margin-bottom: 2em;
+}
+
+.publi.contato .inpContato {
+    border: 1px solid #abc;
+    display: block;
+    border-radius: 25px;
+    background: #fff;
+    width: 55%;
+    height: 2%;
+    padding: 10px 20px;
+    color: #000;
+    outline: none;
+    margin: 1em 0;
+}
+
+.publi.contato .message {
+    border: 1px solid #abc;
+    display: block;
+    border-radius: 25px;
+    background: #fff;
+    width: 55%;
+    padding: 10px 20px;
+    color: #000;
+    outline: none;
+    margin: 1em 0 2em;
+}
+
+.publi.contato .btn-contato {
+    background-color: #4AACB7;
+    color: #fff;
+    font-family: Montserrat-bold;
+    border-radius: 5em;
+    width: 55%;
+    padding: 0.8em ;
+    margin-bottom: 2em;
+    border: none;
+    outline: none;
+}
+
+/*Cadastro Paciente*/
+
+.publi.cadPa .tituloCadPa {
+    margin-bottom: 2em;
+    color: red;
+}
+
+.content3 .bg-cadPa {
+    background: url("../img/img06.JPG") no-repeat;
+    background-position-y: 55%;
+    background-size: cover;
+    filter: blur(0.1em);
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.cadPessoa {
+    border: 1px solid #abc;
+    display: block;
+    border-radius: 25px;
+    background: #fff;
+    width: 55%;
+    height: 2%;
+    padding: 10px 20px;
+    color: #000;
+    outline: none;
+    margin: 1em 0;
+}
+
+.btn-cadPessoa {
+    background-color: #4AACB7;
+    color: #fff;
+    font-family: Montserrat-bold;
+    border-radius: 5em;
+    width: 55%;
+    padding: 0.8em ;
+    margin-bottom: 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.termo {
+    margin: 2em 0 2em 0;
+}
+
+/*Cadastro Unidade*/
+
+.publi.cadUnid .tituloCadPa {
+    margin-bottom: 2em;
+    color: red;
+}
+
+.content9 .bg-cadUnid {
+    background: url("../img/img06.JPG") no-repeat;
+    background-position-y: 55%;
+    background-size: cover;
+    filter: blur(0.1em);
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.cadUnid {
+    border: 1px solid #abc;
+    display: block;
+    border-radius: 25px;
+    background: #fff;
+    width: 55%;
+    height: 2%;
+    padding: 10px 20px;
+    color: #000;
+    outline: none;
+    margin: 1em 0;
+}
+
+.btn-cadUnid {
+    background-color: #4AACB7;
+    color: #fff;
+    font-family: Montserrat-bold;
+    border-radius: 5em;
+    width: 55%;
+    padding: 0.8em ;
+    margin-bottom: 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.termo {
+    margin: 2em 0 2em 0;
+}
